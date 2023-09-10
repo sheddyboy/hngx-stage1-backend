@@ -14,7 +14,7 @@ app.get("/api", (req, res) => {
     const data = {
         slack_name,
         current_day: new Date().toLocaleString("en-US", { weekday: "long" }),
-        utc_time: new Date().toISOString(),
+        utc_time: new Date().toISOString().slice(0, 19) + 'Z',
         track,
         github_file_url: "https://github.com/sheddyboy/hngx-stage1-backend/blob/master/index.js",
         github_repo_url: "https://github.com/sheddyboy/hngx-stage1-backend",
