@@ -15,8 +15,8 @@ app.get("/api", (req, res) => {
     dayOfWeek: new Date().toLocaleString("en-US", { weekday: "long" }),
     utcTime: new Date().toISOString(),
     track,
-    githubFileURL: "your_github_file_url",
-    githubSourceURL: "your_github_source_url",
+    githubFileURL: "https://github.com/sheddyboy/hngx-stage1-backend/blob/master/index.js",
+    githubSourceURL: "https://github.com/sheddyboy/hngx-stage1-backend",
     status_code: 200
   };
 
